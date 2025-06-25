@@ -1,0 +1,85 @@
+/* 전체 화면 정렬 */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* 계산기 컨테이너 */
+.calculator-container {
+  width: 340px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 디스플레이 영역 */
+.display {
+  height: 60px;
+  background-color: #eee;
+  border-radius: 10px;
+  font-size: 24px;
+  text-align: right;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+/* 버튼 영역 */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* 공통 버튼 스타일 */
+.button {
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* 0번 버튼은 2칸 차지 */
+.zero {
+  width: 150px;
+}
+
+/* 버튼 hover / active 효과 */
+.button:hover {
+  background-color: #ccc;
+}
+
+.button:active {
+  background-color: #bbb;
+}
+
+/* 숫자 버튼 */
+.number {
+  background-color: #e0e0e0;
+}
+
+/* 연산자 버튼 */
+.operator {
+  background-color: #f9c74f;
+}
+
+/* 기능 버튼 (C, 괄호, %, ±) */
+.function {
+  background-color: #90be6d;
+}
